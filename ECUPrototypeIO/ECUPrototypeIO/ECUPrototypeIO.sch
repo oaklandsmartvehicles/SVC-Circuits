@@ -1,7 +1,7 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr User 17000 13780
+$Descr User 14961 9843
 encoding utf-8
 Sheet 1 1
 Title "DriveByWireECU Prototype"
