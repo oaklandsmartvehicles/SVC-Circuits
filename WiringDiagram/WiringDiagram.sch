@@ -4,12 +4,12 @@ EELAYER END
 $Descr User 11811 8661
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Wiring Diagram"
 Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Rev "1"
+Comp "Oakland University Smart Vehicle Club"
+Comment1 "johnbrooks@oakland.edu"
+Comment2 "John Brooks"
 Comment3 ""
 Comment4 ""
 $EndDescr
