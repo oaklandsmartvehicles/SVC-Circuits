@@ -26,10 +26,10 @@ ESTOP_In
 Wire Wire Line
 	3500 1550 3650 1550
 $Comp
-L Relay:DIPxx-1Cxx-51x D
+L Relay:DIPxx-1Cxx-51x F
 U 1 1 5DE030D3
 P 2350 1850
-F 0 "D" V 1783 1850 50  0000 C CNN
+F 0 "F" V 1783 1850 50  0000 C CNN
 F 1 "Relay " V 1874 1850 50  0000 C CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 2800 1800 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 2350 1850 50  0001 C CNN
@@ -37,10 +37,10 @@ F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.
 	0    -1   1    0   
 $EndComp
 $Comp
-L Relay:DIPxx-1Cxx-51x K3
+L Relay:DIPxx-1Cxx-51x H
 U 1 1 5DE4A6EC
 P 3250 3200
-F 0 "K3" V 2683 3200 50  0000 C CNN
+F 0 "H" V 2683 3200 50  0000 C CNN
 F 1 "Relay" V 2774 3200 50  0000 C CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3700 3150 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 3250 3200 50  0001 C CNN
@@ -48,10 +48,10 @@ F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.
 	0    1    1    0   
 $EndComp
 $Comp
-L Relay:DIPxx-1Cxx-51x K2
+L Relay:DIPxx-1Cxx-51x E
 U 1 1 5DE2D2DA
 P 3950 1750
-F 0 "K2" V 3383 1750 50  0000 C CNN
+F 0 "E" V 3383 1750 50  0000 C CNN
 F 1 "Relay" V 3474 1750 50  0000 C CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 4400 1700 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 3950 1750 50  0001 C CNN
@@ -407,10 +407,10 @@ ESTOP_In
 Wire Wire Line
 	8350 8150 8500 8150
 $Comp
-L Relay:DIPxx-1Cxx-51x C
+L Relay:DIPxx-1Cxx-51x D
 U 1 1 5E0CCA91
 P 8800 8350
-F 0 "C" V 8233 8350 50  0000 C CNN
+F 0 "D" V 8233 8350 50  0000 C CNN
 F 1 "Relay" V 8324 8350 50  0000 C CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 9250 8300 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 8800 8350 50  0001 C CNN
@@ -424,10 +424,10 @@ ESTOP_In
 Wire Wire Line
 	9400 5950 9550 5950
 $Comp
-L Relay:DIPxx-1Cxx-51x B
+L Relay:DIPxx-1Cxx-51x C
 U 1 1 5E11D858
 P 9850 6150
-F 0 "B" V 9283 6150 50  0000 C CNN
+F 0 "C" V 9283 6150 50  0000 C CNN
 F 1 "Relay" V 9374 6150 50  0000 C CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 10300 6100 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 9850 6150 50  0001 C CNN
@@ -443,8 +443,6 @@ Wire Wire Line
 Wire Wire Line
 	8900 6450 9550 6450
 Connection ~ 8650 5750
-Wire Wire Line
-	7950 8550 7950 8650
 Wire Wire Line
 	7950 8650 8500 8650
 Text GLabel 9350 8550 2    50   Input ~ 0
@@ -768,10 +766,10 @@ F 3 "" H 6300 1550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Relay:DIPxx-1Cxx-51x K?
+L Relay:DIPxx-1Cxx-51x A
 U 1 1 5E271F04
 P 7700 1450
-F 0 "K?" V 7133 1450 50  0000 C CNN
+F 0 "A" V 7133 1450 50  0000 C CNN
 F 1 "Relay" V 7224 1450 50  0000 C CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 8150 1400 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 7700 1450 50  0001 C CNN
@@ -807,10 +805,10 @@ Wire Wire Line
 Wire Wire Line
 	8700 4200 10150 4200
 $Comp
-L Relay:DIPxx-1Cxx-51x K5
+L Relay:DIPxx-1Cxx-51x G
 U 1 1 5DF1B274
 P 8400 4000
-F 0 "K5" V 7833 4000 50  0000 C CNN
+F 0 "G" V 7833 4000 50  0000 C CNN
 F 1 "Relay" V 7924 4000 50  0000 C CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 8850 3950 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 8400 4000 50  0001 C CNN
@@ -1039,30 +1037,15 @@ Wire Wire Line
 Wire Wire Line
 	13150 5250 13300 5250
 $Comp
-L Relay:DIPxx-1Cxx-51x K?
+L Relay:DIPxx-1Cxx-51x B
 U 1 1 5E9BE291
 P 11450 1750
-F 0 "K?" V 10883 1750 50  0000 C CNN
+F 0 "B" V 10883 1750 50  0000 C CNN
 F 1 "Relay" V 10974 1750 50  0000 C CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 11900 1700 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 11450 1750 50  0001 C CNN
 	1    11450 1750
 	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	10850 2100 10850 1450
-Wire Wire Line
-	10850 1450 11150 1450
-$Comp
-L power:GND #PWR?
-U 1 1 5E9E1E08
-P 11350 1450
-F 0 "#PWR?" H 11350 1200 50  0001 C CNN
-F 1 "GND" V 11355 1322 50  0000 R CNN
-F 2 "" H 11350 1450 50  0001 C CNN
-F 3 "" H 11350 1450 50  0001 C CNN
-	1    11350 1450
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	10250 700  10250 1400
@@ -1165,4 +1148,55 @@ Text GLabel 12800 4100 0    50   Input ~ 0
 Red
 Wire Wire Line
 	12800 4100 13300 4100
+Wire Wire Line
+	10850 1100 11350 1100
+Wire Wire Line
+	10850 1100 10850 2100
+Wire Wire Line
+	11350 1100 11350 1450
+$Comp
+L power:GND #PWR?
+U 1 1 5E2E167D
+P 11150 1300
+F 0 "#PWR?" H 11150 1050 50  0001 C CNN
+F 1 "GND" V 11155 1172 50  0000 R CNN
+F 2 "" H 11150 1300 50  0001 C CNN
+F 3 "" H 11150 1300 50  0001 C CNN
+	1    11150 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11150 1450 11150 1300
+$Comp
+L Transistor_FET:IRF740 A
+U 1 1 5E2EE751
+P 7550 8250
+F 0 "A" V 7892 8250 50  0000 C CNN
+F 1 "FET" V 7801 8250 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7800 8175 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 7550 8250 50  0001 L CNN
+	1    7550 8250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7550 8450 7950 8450
+Wire Wire Line
+	7950 8450 7950 8650
+Wire Wire Line
+	7100 8150 7350 8150
+Wire Wire Line
+	7750 8150 7950 8150
+Wire Wire Line
+	7950 8150 7950 7700
+$Comp
+L power:GND #PWR?
+U 1 1 5E321D34
+P 7950 7700
+F 0 "#PWR?" H 7950 7450 50  0001 C CNN
+F 1 "GND" V 7955 7572 50  0000 R CNN
+F 2 "" H 7950 7700 50  0001 C CNN
+F 3 "" H 7950 7700 50  0001 C CNN
+	1    7950 7700
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
