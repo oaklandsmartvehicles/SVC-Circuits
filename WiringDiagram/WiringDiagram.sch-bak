@@ -1,15 +1,15 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr User 11811 8661
+$Descr User 15749 8661
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Wiring Diagram"
 Date ""
 Rev "1"
 Comp "Oakland University Smart Vehicle Club"
-Comment1 ""
-Comment2 ""
+Comment1 "johnbrooks@oakland.edu"
+Comment2 "John Brooks"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -467,4 +467,224 @@ Wire Notes Line
 	10400 3450 10400 4050
 Wire Notes Line
 	9400 3450 9400 4050
+Text GLabel 12450 1650 0    50   Input ~ 0
+BrakeHbridge
+Text GLabel 12450 1750 0    50   Input ~ 0
+ESTOP_Red
+Text GLabel 12450 1850 0    50   Input ~ 0
+ACC_Green
+Text GLabel 12450 2050 0    50   Input ~ 0
+ACC_Red
+Text GLabel 12450 2250 0    50   Input ~ 0
+ACC_White
+Text GLabel 12450 2450 0    50   Input ~ 0
+ACC_Black
+Text GLabel 12450 1950 0    50   Input ~ 0
+ESTOP_Yellow_AND_RemoteESTOP
+$Comp
+L Connector:DB9_Female J?
+U 1 1 5E419705
+P 12750 2050
+AR Path="/5E3EE9B0/5E419705" Ref="J?"  Part="1" 
+AR Path="/5E419705" Ref="J?"  Part="1" 
+F 0 "J?" H 12930 2096 50  0000 L CNN
+F 1 "Vehicle Connnector 2" H 12930 2005 50  0000 L CNN
+F 2 "" H 12750 2050 50  0001 C CNN
+F 3 " ~" H 12750 2050 50  0001 C CNN
+	1    12750 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 5000 9350 5000
+Wire Wire Line
+	9350 4900 9800 4900
+Wire Wire Line
+	9800 4800 9350 4800
+Wire Wire Line
+	9350 4700 9800 4700
+Wire Wire Line
+	9800 4600 9350 4600
+Wire Wire Line
+	9350 4500 9800 4500
+Wire Wire Line
+	9800 4400 9350 4400
+Text GLabel 9350 5000 0    50   Input ~ 0
+LightSwitch_2
+Text GLabel 9350 4900 0    50   Input ~ 0
+VoltageDivider_C
+Text GLabel 9350 4800 0    50   Input ~ 0
+LightSwitch1
+Text GLabel 9350 4700 0    50   Input ~ 0
+AccelerationEnable_5V
+Text GLabel 9350 4600 0    50   Input ~ 0
+OpAmpBOut
+Text GLabel 9350 4500 0    50   Input ~ 0
+AccelerationFiltered
+Text GLabel 9350 4400 0    50   Input ~ 0
+OpAmpAOut
+$Comp
+L Connector:DB9_Female J?
+U 1 1 5E4196F1
+P 10100 4800
+AR Path="/5E3EE9B0/5E4196F1" Ref="J?"  Part="1" 
+AR Path="/5E4196F1" Ref="J?"  Part="1" 
+F 0 "J?" H 10280 4846 50  0000 L CNN
+F 1 "Relay Module Con1" H 10280 4755 50  0000 L CNN
+F 2 "" H 10100 4800 50  0001 C CNN
+F 3 " ~" H 10100 4800 50  0001 C CNN
+	1    10100 4800
+	1    0    0    -1  
+$EndComp
+Text GLabel 9300 6300 0    50   Input ~ 0
+RealyH_IN
+$Comp
+L Connector:DB9_Female J?
+U 1 1 5E4196EA
+P 10100 5900
+AR Path="/5E3EE9B0/5E4196EA" Ref="J?"  Part="1" 
+AR Path="/5E4196EA" Ref="J?"  Part="1" 
+F 0 "J?" H 10280 5946 50  0000 L CNN
+F 1 "Relay Module Con2" H 10280 5855 50  0000 L CNN
+F 2 "" H 10100 5900 50  0001 C CNN
+F 3 " ~" H 10100 5900 50  0001 C CNN
+	1    10100 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 5500 9800 5500
+Wire Wire Line
+	9300 5700 9800 5700
+Wire Wire Line
+	9300 5900 9800 5900
+Wire Wire Line
+	9300 6100 9800 6100
+Wire Wire Line
+	9300 6300 9800 6300
+Wire Wire Line
+	9300 5600 9800 5600
+Wire Wire Line
+	9300 6200 9800 6200
+Text GLabel 7250 7500 0    50   Input ~ 0
+SteeringDriverConnector1_Black
+Text GLabel 9300 6200 0    50   Input ~ 0
+12V
+Text GLabel 9300 5600 0    50   Input ~ 0
+[Not_Connected]
+Text GLabel 9300 6100 0    50   Input ~ 0
+RelayG_IN
+Text GLabel 9300 5900 0    50   Input ~ 0
+GND
+Text GLabel 9300 5700 0    50   Input ~ 0
+RelayF_IN
+Text GLabel 9300 5500 0    50   Input ~ 0
+RelayA_IN
+Wire Wire Line
+	7250 7600 7400 7600
+Wire Wire Line
+	7250 7400 7400 7400
+Wire Wire Line
+	7250 7200 7400 7200
+Wire Wire Line
+	7250 7900 7400 7900
+Wire Wire Line
+	7250 7700 7400 7700
+Wire Wire Line
+	7250 7500 7400 7500
+Wire Wire Line
+	7250 7300 7400 7300
+Wire Wire Line
+	7250 7100 7400 7100
+Text GLabel 7250 7600 0    50   Input ~ 0
+SteeringDriverConnector3_Black
+Text GLabel 7250 7400 0    50   Input ~ 0
+SteeringDriverConnector3_Yellow
+Text GLabel 7250 7200 0    50   Input ~ 0
+SteeringDriverConnector3_Red
+Text GLabel 7250 7900 0    50   Input ~ 0
+SteeringDriverConnector2_Black
+Text GLabel 7250 7700 0    50   Input ~ 0
+SteeringDriverConnector2_Red
+Text GLabel 7250 7300 0    50   Input ~ 0
+SteeringDriverConnector1_Yellow
+Text GLabel 7250 7100 0    50   Input ~ 0
+SteeringDriverConnector1_Red
+$Comp
+L Connector:DB9_Female J?
+U 1 1 5E4196B2
+P 7700 7500
+AR Path="/5E3EE9B0/5E4196B2" Ref="J?"  Part="1" 
+AR Path="/5E4196B2" Ref="J?"  Part="1" 
+F 0 "J?" H 7880 7546 50  0000 L CNN
+F 1 "Steering Driver" H 7880 7455 50  0000 L CNN
+F 2 "" H 7700 7500 50  0001 C CNN
+F 3 " ~" H 7700 7500 50  0001 C CNN
+	1    7700 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DB9_Female J1&?
+U 1 1 5E4196A7
+P 11450 3550
+AR Path="/5E3EE9B0/5E4196A7" Ref="J1&?"  Part="1" 
+AR Path="/5E4196A7" Ref="J1&?"  Part="1" 
+F 0 "J1&?" H 11630 3596 50  0000 L CNN
+F 1 "SafetyLights" H 11630 3505 50  0000 L CNN
+F 2 "" H 11450 3550 50  0001 C CNN
+F 3 " ~" H 11450 3550 50  0001 C CNN
+	1    11450 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 11050 3150 0    50   Input ~ 0
+Mode_White
+Text GLabel 11050 3550 0    50   Input ~ 0
+Gnd_Black
+Text GLabel 11050 3850 0    50   Input ~ 0
+Power_Red
+Wire Wire Line
+	11050 3150 11150 3150
+Wire Wire Line
+	11050 3550 11150 3550
+$Comp
+L Connector:DB9_Female J?
+U 1 1 5E4196B8
+P 4750 7100
+AR Path="/5E3EE9B0/5E4196B8" Ref="J?"  Part="1" 
+AR Path="/5E4196B8" Ref="J?"  Part="1" 
+F 0 "J?" H 4930 7146 50  0000 L CNN
+F 1 "Vehicle Connecter 1" H 4930 7055 50  0000 L CNN
+F 2 "" H 4750 7100 50  0001 C CNN
+F 3 " ~" H 4750 7100 50  0001 C CNN
+	1    4750 7100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4350 6700 0    50   Input ~ 0
+MotorSpeed_Red
+Text GLabel 4350 6900 0    50   Input ~ 0
+ReverseControl_Black
+Text GLabel 4350 7100 0    50   Input ~ 0
+ReverseControl_Green
+Text GLabel 4350 7300 0    50   Input ~ 0
+ReverseControl_Red
+Text GLabel 4350 7500 0    50   Input ~ 0
+ReverseControl_Blue
+Wire Wire Line
+	11050 3850 11150 3850
+Wire Wire Line
+	4350 6700 4450 6700
+Wire Wire Line
+	4350 6800 4450 6800
+Wire Wire Line
+	4350 6900 4450 6900
+Wire Wire Line
+	4350 7000 4450 7000
+Wire Wire Line
+	4350 7100 4450 7100
+Wire Wire Line
+	4350 7200 4450 7200
+Wire Wire Line
+	4350 7300 4450 7300
+Wire Wire Line
+	4350 7400 4450 7400
+Wire Wire Line
+	4350 7500 4450 7500
 $EndSCHEMATC

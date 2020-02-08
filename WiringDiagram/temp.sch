@@ -1,15 +1,15 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr User 14961 9843
+$Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
-Title "DriveByWireECU Prototype"
-Date "2019-11-29"
-Rev "2"
-Comp "Oakland University Smart Vehicle Club"
-Comment1 "johnbrooks@oakland.edu"
-Comment2 "John Brooks"
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -729,6 +729,27 @@ MotorSpeedReading_White
 Wire Wire Line
 	2450 5600 3000 5600
 Connection ~ 2450 5600
+$Comp
+L Connector:DB9_Female J1&2
+U 1 1 5E10F9FE
+P 13600 7500
+F 0 "J1&2" H 13780 7546 50  0000 L CNN
+F 1 "SafetyLights" H 13780 7455 50  0000 L CNN
+F 2 "" H 13600 7500 50  0001 C CNN
+F 3 " ~" H 13600 7500 50  0001 C CNN
+	1    13600 7500
+	1    0    0    -1  
+$EndComp
+Text GLabel 13200 7100 0    50   Input ~ 0
+Mode_White
+Text GLabel 13200 7500 0    50   Input ~ 0
+Gnd_Black
+Text GLabel 13200 7800 0    50   Input ~ 0
+Power_Red
+Wire Wire Line
+	13200 7100 13300 7100
+Wire Wire Line
+	13200 7500 13300 7500
 Text GLabel 6900 1350 0    50   Input ~ 0
 SafetyLights1Enable
 Wire Wire Line
@@ -817,6 +838,17 @@ Wire Wire Line
 	3550 3000 3900 3000
 Wire Wire Line
 	7050 6250 7000 6250
+$Comp
+L Connector:DB9_Female J4
+U 1 1 5E5170AA
+P 13600 5150
+F 0 "J4" H 13780 5196 50  0000 L CNN
+F 1 "Steering Driver" H 13780 5105 50  0000 L CNN
+F 2 "" H 13600 5150 50  0001 C CNN
+F 3 " ~" H 13600 5150 50  0001 C CNN
+	1    13600 5150
+	1    0    0    -1  
+$EndComp
 Text GLabel 4500 1550 2    50   Input ~ 0
 RelayModuleGnd
 Text GLabel 8900 3800 2    50   Input ~ 0
@@ -924,6 +956,77 @@ RelayModuleGnd
 Wire Wire Line
 	2650 1650 2800 1650
 $Comp
+L Connector:DB9_Female J3
+U 1 1 5E7DD934
+P 13600 6300
+F 0 "J3" H 13780 6346 50  0000 L CNN
+F 1 "Vehicle Connecter 1" H 13780 6255 50  0000 L CNN
+F 2 "" H 13600 6300 50  0001 C CNN
+F 3 " ~" H 13600 6300 50  0001 C CNN
+	1    13600 6300
+	1    0    0    -1  
+$EndComp
+Text GLabel 13200 5900 0    50   Input ~ 0
+MotorSpeed_Red
+Text GLabel 13200 6100 0    50   Input ~ 0
+ReverseControl_Black
+Text GLabel 13200 6300 0    50   Input ~ 0
+ReverseControl_Green
+Text GLabel 13200 6500 0    50   Input ~ 0
+ReverseControl_Red
+Text GLabel 13200 6700 0    50   Input ~ 0
+ReverseControl_Blue
+Wire Wire Line
+	13200 7800 13300 7800
+Wire Wire Line
+	13200 5900 13300 5900
+Wire Wire Line
+	13200 6000 13300 6000
+Wire Wire Line
+	13200 6100 13300 6100
+Wire Wire Line
+	13200 6200 13300 6200
+Wire Wire Line
+	13200 6300 13300 6300
+Wire Wire Line
+	13200 6400 13300 6400
+Wire Wire Line
+	13200 6500 13300 6500
+Wire Wire Line
+	13200 6600 13300 6600
+Wire Wire Line
+	13200 6700 13300 6700
+Text GLabel 13150 4750 0    50   Input ~ 0
+SteeringDriverConnector1_Red
+Text GLabel 13150 4950 0    50   Input ~ 0
+SteeringDriverConnector1_Yellow
+Text GLabel 13150 5350 0    50   Input ~ 0
+SteeringDriverConnector2_Red
+Text GLabel 13150 5550 0    50   Input ~ 0
+SteeringDriverConnector2_Black
+Text GLabel 13150 4850 0    50   Input ~ 0
+SteeringDriverConnector3_Red
+Text GLabel 13150 5050 0    50   Input ~ 0
+SteeringDriverConnector3_Yellow
+Text GLabel 13150 5250 0    50   Input ~ 0
+SteeringDriverConnector3_Black
+Wire Wire Line
+	13150 4750 13300 4750
+Wire Wire Line
+	13150 4950 13300 4950
+Wire Wire Line
+	13150 5150 13300 5150
+Wire Wire Line
+	13150 5350 13300 5350
+Wire Wire Line
+	13150 5550 13300 5550
+Wire Wire Line
+	13150 4850 13300 4850
+Wire Wire Line
+	13150 5050 13300 5050
+Wire Wire Line
+	13150 5250 13300 5250
+$Comp
 L Relay:DIPxx-1Cxx-51x B
 U 1 1 5E9BE291
 P 11450 1750
@@ -996,6 +1099,18 @@ Text GLabel 9900 2400 0    50   Input ~ 0
 EstopIN
 Wire Wire Line
 	7400 1550 6600 1550
+Text GLabel 12800 3400 0    50   Input ~ 0
+RelayA_IN
+Text GLabel 12800 3600 0    50   Input ~ 0
+RelayF_IN
+Text GLabel 12800 3800 0    50   Input ~ 0
+GND
+Text GLabel 12800 4000 0    50   Input ~ 0
+RelayG_IN
+Text GLabel 12800 3500 0    50   Input ~ 0
+[Not_Connected]
+Text GLabel 12800 4100 0    50   Input ~ 0
+12V
 Wire Wire Line
 	10850 1100 11350 1100
 Wire Wire Line
@@ -1047,4 +1162,97 @@ F 3 "" H 7950 7700 50  0001 C CNN
 	1    7950 7700
 	-1   0    0    1   
 $EndComp
+Text GLabel 13150 5150 0    50   Input ~ 0
+SteeringDriverConnector1_Black
+Wire Wire Line
+	12800 4100 13300 4100
+Wire Wire Line
+	12800 3500 13300 3500
+Wire Wire Line
+	12800 4200 13300 4200
+Wire Wire Line
+	12800 4000 13300 4000
+Wire Wire Line
+	12800 3800 13300 3800
+Wire Wire Line
+	12800 3600 13300 3600
+Wire Wire Line
+	12800 3400 13300 3400
+$Comp
+L Connector:DB9_Female J5
+U 1 1 5EB97595
+P 13600 3800
+F 0 "J5" H 13780 3846 50  0000 L CNN
+F 1 "Relay Module Con1" H 13780 3755 50  0000 L CNN
+F 2 "" H 13600 3800 50  0001 C CNN
+F 3 " ~" H 13600 3800 50  0001 C CNN
+	1    13600 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 12800 4200 0    50   Input ~ 0
+RealyH_IN
+$Comp
+L Connector:DB9_Female J6
+U 1 1 5E3CF755
+P 13600 2450
+F 0 "J6" H 13780 2496 50  0000 L CNN
+F 1 "Relay Module Con2" H 13780 2405 50  0000 L CNN
+F 2 "" H 13600 2450 50  0001 C CNN
+F 3 " ~" H 13600 2450 50  0001 C CNN
+	1    13600 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 12850 2050 0    50   Input ~ 0
+OpAmpAOut
+Text GLabel 12850 2150 0    50   Input ~ 0
+AccelerationFiltered
+Text GLabel 12850 2250 0    50   Input ~ 0
+OpAmpBOut
+Text GLabel 12850 2350 0    50   Input ~ 0
+AccelerationEnable_5V
+Text GLabel 12850 2450 0    50   Input ~ 0
+LightSwitch1
+Text GLabel 12850 2550 0    50   Input ~ 0
+VoltageDivider_C
+Text GLabel 12850 2650 0    50   Input ~ 0
+LightSwitch_2
+Wire Wire Line
+	13300 2050 12850 2050
+Wire Wire Line
+	12850 2150 13300 2150
+Wire Wire Line
+	13300 2250 12850 2250
+Wire Wire Line
+	12850 2350 13300 2350
+Wire Wire Line
+	13300 2450 12850 2450
+Wire Wire Line
+	12850 2550 13300 2550
+Wire Wire Line
+	13300 2650 12850 2650
+$Comp
+L Connector:DB9_Female J?
+U 1 1 5E41FDE5
+P 13600 1250
+F 0 "J?" H 13780 1296 50  0000 L CNN
+F 1 "Vehicle Connnector 2" H 13780 1205 50  0000 L CNN
+F 2 "" H 13600 1250 50  0001 C CNN
+F 3 " ~" H 13600 1250 50  0001 C CNN
+	1    13600 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 13300 850  0    50   Input ~ 0
+BrakeHbridge
+Text GLabel 13300 950  0    50   Input ~ 0
+ESTOP_Red
+Text GLabel 13300 1150 0    50   Input ~ 0
+ESTOP_Yellow_AND_RemoteESTOP
+Text GLabel 13300 1650 0    50   Input ~ 0
+ACC_Black
+Text GLabel 13300 1450 0    50   Input ~ 0
+ACC_White
+Text GLabel 13300 1250 0    50   Input ~ 0
+ACC_Red
+Text GLabel 13300 1050 0    50   Input ~ 0
+ACC_Green
 $EndSCHEMATC
