@@ -390,18 +390,16 @@ ACC_Red
 $Comp
 L Device:R R13
 U 1 1 5E0710B8
-P 6950 8150
-F 0 "R13" V 6743 8150 50  0000 C CNN
-F 1 "10K" V 6834 8150 50  0000 C CNN
-F 2 "" V 6880 8150 50  0001 C CNN
-F 3 "~" H 6950 8150 50  0001 C CNN
-	1    6950 8150
-	0    1    1    0   
+P 7450 7750
+F 0 "R13" V 7243 7750 50  0000 C CNN
+F 1 "1k" V 7334 7750 50  0000 C CNN
+F 2 "" V 7380 7750 50  0001 C CNN
+F 3 "~" H 7450 7750 50  0001 C CNN
+	1    7450 7750
+	-1   0    0    1   
 $EndComp
 Text GLabel 6700 8150 0    50   Input ~ 0
 AccelerationEnable
-Wire Wire Line
-	6700 8150 6800 8150
 Text GLabel 8800 7350 2    50   Input ~ 0
 ESTOP_In
 Wire Wire Line
@@ -443,8 +441,6 @@ Wire Wire Line
 Wire Wire Line
 	8900 6450 9550 6450
 Connection ~ 8650 5750
-Wire Wire Line
-	7950 8650 8500 8650
 Text GLabel 9350 8550 2    50   Input ~ 0
 ACC_White
 Text GLabel 9350 8750 2    50   Input ~ 0
@@ -1016,35 +1012,51 @@ $EndComp
 Wire Wire Line
 	11150 1450 11150 1300
 $Comp
-L Transistor_FET:IRF740 A
-U 1 1 5E2EE751
-P 7550 8250
-F 0 "A" V 7892 8250 50  0000 C CNN
-F 1 "FET" V 7801 8250 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7800 8175 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 7550 8250 50  0001 L CNN
-	1    7550 8250
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7550 8450 7950 8450
-Wire Wire Line
-	7950 8450 7950 8650
-Wire Wire Line
-	7100 8150 7350 8150
-Wire Wire Line
-	7750 8150 7950 8150
-Wire Wire Line
-	7950 8150 7950 7700
-$Comp
 L power:GND #PWR?
 U 1 1 5E321D34
-P 7950 7700
-F 0 "#PWR?" H 7950 7450 50  0001 C CNN
-F 1 "GND" V 7955 7572 50  0000 R CNN
-F 2 "" H 7950 7700 50  0001 C CNN
-F 3 "" H 7950 7700 50  0001 C CNN
-	1    7950 7700
-	-1   0    0    1   
+P 7500 8500
+F 0 "#PWR?" H 7500 8250 50  0001 C CNN
+F 1 "GND" V 7505 8372 50  0000 R CNN
+F 2 "" H 7500 8500 50  0001 C CNN
+F 3 "" H 7500 8500 50  0001 C CNN
+	1    7500 8500
+	1    0    0    -1  
 $EndComp
+$Comp
+L Transistor_FET:IRLZ44N Q1
+U 1 1 5E3F7CB4
+P 7400 8150
+F 0 "Q1" H 7604 8196 50  0000 L CNN
+F 1 "IRLZ44N" H 7604 8105 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7650 8075 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 7400 8150 50  0001 L CNN
+	1    7400 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E421138
+P 7450 7600
+F 0 "#PWR?" H 7450 7450 50  0001 C CNN
+F 1 "+5V" H 7465 7773 50  0000 C CNN
+F 2 "" H 7450 7600 50  0001 C CNN
+F 3 "" H 7450 7600 50  0001 C CNN
+	1    7450 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 8150 7200 8150
+Wire Wire Line
+	7450 7900 7450 7950
+Wire Wire Line
+	7450 7950 7500 7950
+Connection ~ 7500 7950
+Wire Wire Line
+	7500 7950 7900 7950
+Wire Wire Line
+	7900 8650 8500 8650
+Wire Wire Line
+	7900 7950 7900 8650
+Wire Wire Line
+	7500 8350 7500 8500
 $EndSCHEMATC
