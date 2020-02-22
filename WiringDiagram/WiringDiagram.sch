@@ -385,8 +385,6 @@ Text GLabel 11050 2300 2    50   Input ~ 0
 ESTOP_Yellow_AND_RemoteESTOP
 Wire Wire Line
 	7350 3650 8300 3650
-Text GLabel 11050 2450 2    50   Input ~ 0
-BrakeHBridge
 Text GLabel 7300 2750 0    50   Input ~ 0
 OpAmp_A_Out
 Wire Wire Line
@@ -471,13 +469,13 @@ Text GLabel 13150 1500 2    50   Input ~ 0
 BrakeHbridge
 Text GLabel 13150 1600 2    50   Input ~ 0
 ESTOP_Red
-Text GLabel 13150 1700 2    50   Input ~ 0
-ACC_Green
-Text GLabel 13150 1900 2    50   Input ~ 0
-ACC_Red
-Text GLabel 13150 2100 2    50   Input ~ 0
-ACC_White
 Text GLabel 13150 2300 2    50   Input ~ 0
+ACC_Green
+Text GLabel 13150 1700 2    50   Input ~ 0
+ACC_Red
+Text GLabel 13150 1900 2    50   Input ~ 0
+ACC_White
+Text GLabel 13150 2100 2    50   Input ~ 0
 ACC_Black
 Text GLabel 13150 1800 2    50   Input ~ 0
 ESTOP_Yellow_AND_RemoteESTOP
@@ -745,4 +743,14 @@ Text GLabel 1650 3600 0    50   Input ~ 0
 ESTOP
 Text GLabel 1650 4200 0    50   Input ~ 0
 VehicleSpeed
+Text GLabel 11050 2450 2    50   Input ~ 0
+BrakeHBridge
+Text GLabel 6600 6700 0    50   Input ~ 0
+GND
+Text GLabel 6600 6900 0    50   Input ~ 0
+SE_B
+Text GLabel 6600 7100 0    50   Input ~ 0
+SE_A
+Text GLabel 6600 7300 0    50   Input ~ 0
+5v
 $EndSCHEMATC
