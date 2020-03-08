@@ -113,9 +113,9 @@ Text GLabel 6450 5250 3    50   Input ~ 0
 SteeringEncoder_A
 Text GLabel 6600 5250 3    50   Input ~ 0
 SteeringEncoder_B
-Text GLabel 6000 5250 3    50   Input ~ 0
-ReverseControl_Red
 Text GLabel 6150 5250 3    50   Input ~ 0
+ReverseControl_Red
+Text GLabel 6000 5250 3    50   Input ~ 0
 ReverseControl_Blue
 Text GLabel 6300 5250 3    50   Input ~ 0
 MotorSpeed_Red
