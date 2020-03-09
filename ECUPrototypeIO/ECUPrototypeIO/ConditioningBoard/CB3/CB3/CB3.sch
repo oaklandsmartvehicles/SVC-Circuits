@@ -640,7 +640,7 @@ RelayModuleCon1
 Wire Notes Line
 	11350 1000 6200 1000
 Text Label 8500 1200 0    50   ~ 0
-VehicleConnector2
+ECUConnector2
 $Comp
 L Device:R R1
 U 1 1 5EE5DE17
