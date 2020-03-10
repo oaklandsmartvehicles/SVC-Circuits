@@ -188,9 +188,9 @@ RelayD_NO
 Text GLabel 8300 3200 2    50   Input ~ 0
 RelayB_COM
 Text GLabel 8300 2150 2    50   Input ~ 0
-RelayF_IN
-Text GLabel 8300 2300 2    50   Input ~ 0
 RelayH_IN
+Text GLabel 8300 2300 2    50   Input ~ 0
+RelayF_IN
 Wire Wire Line
 	6300 2150 8300 2150
 Wire Wire Line
@@ -534,7 +534,7 @@ F 3 " ~" H 11750 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 10950 6400 0    50   Input ~ 0
-RealyH_IN
+RealyF_IN
 $Comp
 L Connector:DB9_Female J?
 U 1 1 5E4196EA
@@ -573,7 +573,7 @@ RelayG_IN
 Text GLabel 10950 6000 0    50   Input ~ 0
 GND
 Text GLabel 10950 5800 0    50   Input ~ 0
-RelayF_IN
+RelayH_IN
 Text GLabel 10950 5600 0    50   Input ~ 0
 RelayA_IN
 Wire Wire Line
