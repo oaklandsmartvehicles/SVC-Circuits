@@ -811,8 +811,6 @@ Wire Wire Line
 	4250 1550 4500 1550
 Wire Wire Line
 	3550 3000 3900 3000
-Wire Wire Line
-	7050 6250 7000 6250
 Text GLabel 4500 1550 2    50   Input ~ 0
 RelayModuleGnd
 Text GLabel 8900 3800 2    50   Input ~ 0
