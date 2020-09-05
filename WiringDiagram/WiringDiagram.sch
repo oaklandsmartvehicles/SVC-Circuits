@@ -243,26 +243,26 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E1E89BD
-P 6750 1450
-F 0 "#PWR?" H 6750 1200 50  0001 C CNN
-F 1 "GND" H 6755 1277 50  0000 C CNN
-F 2 "" H 6750 1450 50  0001 C CNN
-F 3 "" H 6750 1450 50  0001 C CNN
-	1    6750 1450
+P 6500 1450
+F 0 "#PWR?" H 6500 1200 50  0001 C CNN
+F 1 "GND" H 6505 1277 50  0000 C CNN
+F 2 "" H 6500 1450 50  0001 C CNN
+F 3 "" H 6500 1450 50  0001 C CNN
+	1    6500 1450
 	1    0    0    -1  
 $EndComp
 Text GLabel 6150 1450 3    50   Input ~ 0
-5V
-Text GLabel 6550 1450 3    50   Input ~ 0
 12V
+Text GLabel 6700 1450 3    50   Input ~ 0
+5V
 Wire Wire Line
 	6150 1450 6150 800 
 Wire Wire Line
 	6350 1450 6350 800 
 Wire Wire Line
-	6550 1450 6550 800 
+	6700 1450 6700 800 
 Wire Wire Line
-	6750 1450 6750 800 
+	6500 1450 6500 800 
 Text Notes 6050 700  0    50   ~ 0
 To Power Distribution
 Text Notes 5200 1550 0    50   ~ 0
@@ -753,4 +753,19 @@ Text GLabel 6600 7100 0    50   Input ~ 0
 SE_A
 Text GLabel 6600 7300 0    50   Input ~ 0
 5v
+NoConn ~ 1650 3800
+NoConn ~ 1650 4000
+NoConn ~ 11450 5200
+NoConn ~ 11450 5300
+NoConn ~ 11450 5900
+NoConn ~ 11450 6100
+NoConn ~ 8550 7600
+NoConn ~ 12450 3050
+NoConn ~ 12450 3150
+NoConn ~ 12450 3250
+NoConn ~ 12450 3450
+NoConn ~ 12450 3550
+NoConn ~ 12450 3750
+NoConn ~ 13150 2000
+NoConn ~ 13150 2200
 $EndSCHEMATC

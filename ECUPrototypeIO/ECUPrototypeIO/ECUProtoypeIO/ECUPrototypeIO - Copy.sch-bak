@@ -15,7 +15,7 @@ Comment4 ""
 $EndDescr
 Text GLabel 1400 1700 0    50   Input ~ 0
 SteeringEnable
-Text GLabel 2350 3150 0    50   Input ~ 0
+Text GLabel 2350 3000 0    50   Input ~ 0
 SteeringDirection
 Text GLabel 4500 2100 2    50   Input ~ 0
 SteeringDriverConnector2_Black
@@ -795,11 +795,6 @@ F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8100 3750 8100 3800
-Connection ~ 8100 3800
-Wire Wire Line
-	8100 3800 8100 4000
-Wire Wire Line
 	8700 3800 8900 3800
 Wire Wire Line
 	9400 5150 9400 5950
@@ -815,8 +810,6 @@ Wire Wire Line
 	4250 1550 4500 1550
 Wire Wire Line
 	3550 3000 3900 3000
-Wire Wire Line
-	7050 6250 7000 6250
 Text GLabel 4500 1550 2    50   Input ~ 0
 RelayModuleGnd
 Text GLabel 8900 3800 2    50   Input ~ 0
@@ -828,12 +821,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 5150 9750 5150
 Wire Wire Line
-	2350 3150 2950 3150
-Wire Wire Line
-	2950 3000 2950 3150
-Connection ~ 2950 3150
-Wire Wire Line
-	2950 3150 2950 3200
+	2350 3000 2950 3000
 Wire Wire Line
 	1400 1700 2050 1700
 Wire Wire Line
@@ -1047,4 +1035,8 @@ F 3 "" H 7950 7700 50  0001 C CNN
 	1    7950 7700
 	-1   0    0    1   
 $EndComp
+Text GLabel 11650 2350 2    50   Input ~ 0
+RelayModuleGnd
+Wire Wire Line
+	11650 2050 11650 2350
 $EndSCHEMATC
