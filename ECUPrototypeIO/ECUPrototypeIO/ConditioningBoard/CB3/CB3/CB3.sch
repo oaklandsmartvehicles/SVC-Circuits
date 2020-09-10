@@ -34,7 +34,7 @@ U 1 1 5DE7368A
 P 8150 2100
 F 0 "C1" H 8265 2146 50  0000 L CNN
 F 1 "100nF" H 8265 2055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8188 1950 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm" H 8188 1950 50  0001 C CNN
 F 3 "~" H 8150 2100 50  0001 C CNN
 	1    8150 2100
 	1    0    0    -1  
@@ -157,7 +157,7 @@ U 1 1 5DFA0015
 P 2600 3650
 F 0 "C2" H 2715 3696 50  0000 L CNN
 F 1 "100nF" H 2715 3605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2638 3500 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm" H 2638 3500 50  0001 C CNN
 F 3 "~" H 2600 3650 50  0001 C CNN
 	1    2600 3650
 	1    0    0    -1  
@@ -648,7 +648,7 @@ U 1 1 5EE8749A
 P 8650 6100
 F 0 "C3" H 8765 6146 50  0000 L CNN
 F 1 "100nF" H 8765 6055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8688 5950 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm" H 8688 5950 50  0001 C CNN
 F 3 "~" H 8650 6100 50  0001 C CNN
 	1    8650 6100
 	1    0    0    -1  
@@ -824,7 +824,7 @@ U 1 1 5E68511A
 P 3250 5000
 F 0 "Q1" H 3455 5046 50  0000 L CNN
 F 1 "2N7002H" H 3455 4955 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3450 4925 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:SIPAK-1EP_Horizontal_TabDown" H 3450 4925 50  0001 L CIN
 F 3 "http://www.diodes.com/assets/Datasheets/2N7002H.pdf" H 3250 5000 50  0001 L CNN
 	1    3250 5000
 	1    0    0    -1  
@@ -1011,7 +1011,7 @@ U 1 1 5E6D6B42
 P 1900 1550
 F 0 "F1" H 1900 1735 50  0000 C CNN
 F 1 "1A Fuse" H 1900 1644 50  0000 C CNN
-F 2 "Fuse:Fuse_0805_2012Metric" H 1900 1550 50  0001 C CNN
+F 2 "Fuse:Fuse_Littelfuse-LVR100" H 1900 1550 50  0001 C CNN
 F 3 "~" H 1900 1550 50  0001 C CNN
 	1    1900 1550
 	1    0    0    -1  
@@ -1039,4 +1039,8 @@ Text GLabel 13000 4250 0    50   Input ~ 0
 12V
 Text GLabel 7000 2300 1    50   Input ~ 0
 12V
+Text Notes 9000 2750 0    50   ~ 10
+OPEN ERRORS:\n\n- Op-Amp gain error?\n- Voltage divider only drops 12V to 9.5V \n    (Vd_c is Vin, Estop is Vout)
+Text Notes 3700 4200 0    50   ~ 10
+OPEN ERRORS:\n\n- Op-Amp gain error?\n   (Need function generator to test)\n- Verify mosfet circuit
 $EndSCHEMATC
