@@ -938,7 +938,7 @@ Wire Wire Line
 	11250 2400 11250 2800
 Connection ~ 11250 2400
 Text GLabel 9900 2400 0    50   Input ~ 0
-EstopIN
+ESTOP_In
 Wire Wire Line
 	7400 1550 6600 1550
 Wire Wire Line
