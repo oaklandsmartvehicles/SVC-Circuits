@@ -233,50 +233,10 @@ Connection ~ 3850 3400
 Wire Wire Line
 	9400 1850 9950 1850
 Connection ~ 9400 1850
-Text GLabel 7800 3100 0    50   Input ~ 0
+Text GLabel 7700 3000 0    50   Input ~ 0
 ESTOP
-$Comp
-L Device:R R14
-U 1 1 5DE1B463
-P 8200 3250
-F 0 "R14" H 8270 3296 50  0000 L CNN
-F 1 "39K" H 8270 3205 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8130 3250 50  0001 C CNN
-F 3 "~" H 8200 3250 50  0001 C CNN
-	1    8200 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R15
-U 1 1 5DE1C159
-P 8650 3100
-F 0 "R15" V 8443 3100 50  0000 C CNN
-F 1 "10K" V 8534 3100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8580 3100 50  0001 C CNN
-F 3 "~" H 8650 3100 50  0001 C CNN
-	1    8650 3100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8200 3100 8500 3100
-$Comp
-L power:GNDA #PWR0117
-U 1 1 5DE24ED1
-P 8200 3400
-F 0 "#PWR0117" H 8200 3150 50  0001 C CNN
-F 1 "GNDA" H 8205 3227 50  0000 C CNN
-F 2 "" H 8200 3400 50  0001 C CNN
-F 3 "" H 8200 3400 50  0001 C CNN
-	1    8200 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8200 3100 7800 3100
-Connection ~ 8200 3100
-Text GLabel 9000 3100 2    50   Input ~ 0
+Text GLabel 8900 3000 2    50   Input ~ 0
 VoltageDivider_C
-Wire Wire Line
-	9000 3100 8800 3100
 Text GLabel 5600 8550 0    50   Input ~ 0
 GND
 Wire Wire Line
@@ -288,16 +248,16 @@ RelayC_NO
 $Comp
 L power:GND #PWR03
 U 1 1 5E321D34
-P 3350 5350
-F 0 "#PWR03" H 3350 5100 50  0001 C CNN
-F 1 "GND" V 3355 5222 50  0000 R CNN
-F 2 "" H 3350 5350 50  0001 C CNN
-F 3 "" H 3350 5350 50  0001 C CNN
-	1    3350 5350
+P 3350 5400
+F 0 "#PWR03" H 3350 5150 50  0001 C CNN
+F 1 "GND" V 3355 5272 50  0000 R CNN
+F 2 "" H 3350 5400 50  0001 C CNN
+F 3 "" H 3350 5400 50  0001 C CNN
+	1    3350 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 5000 3050 5000
+	2550 5000 2900 5000
 Wire Wire Line
 	3300 4750 3300 4800
 Wire Wire Line
@@ -1040,7 +1000,72 @@ Text GLabel 13000 4250 0    50   Input ~ 0
 Text GLabel 7000 2300 1    50   Input ~ 0
 12V
 Text Notes 9000 2750 0    50   ~ 10
-OPEN ERRORS:\n\n- Op-Amp gain error?\n- Voltage divider only drops 12V to 9.5V \n    (Vd_c is Vin, Estop is Vout)
+Modified\n\n- Flipped resistors Vdc to ESTOP voltage divider 
 Text Notes 3700 4200 0    50   ~ 10
-OPEN ERRORS:\n\n- Op-Amp gain error?\n   (Need function generator to test)\n- Verify mosfet circuit
+Modified:\n\n- Added pull down resistor to mosfet circuit
+$Comp
+L Device:R R18
+U 1 1 5F69E7D0
+P 2900 5200
+F 0 "R18" V 2693 5200 50  0000 C CNN
+F 1 "10k" V 2784 5200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2830 5200 50  0001 C CNN
+F 3 "~" H 2900 5200 50  0001 C CNN
+	1    2900 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 5050 2900 5000
+Connection ~ 2900 5000
+Wire Wire Line
+	2900 5000 3050 5000
+Wire Wire Line
+	2900 5350 3350 5350
+Connection ~ 3350 5350
+Wire Wire Line
+	3350 5350 3350 5400
+$Comp
+L Device:R R15
+U 1 1 5F6C5EC2
+P 8450 3200
+F 0 "R15" V 8243 3200 50  0000 C CNN
+F 1 "10K" V 8334 3200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8380 3200 50  0001 C CNN
+F 3 "~" H 8450 3200 50  0001 C CNN
+	1    8450 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5F6C70BA
+P 8150 3000
+F 0 "R14" H 8220 3046 50  0000 L CNN
+F 1 "39K" H 8220 2955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8080 3000 50  0001 C CNN
+F 3 "~" H 8150 3000 50  0001 C CNN
+	1    8150 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 3000 8450 3000
+Wire Wire Line
+	8450 3050 8450 3000
+Connection ~ 8450 3000
+Wire Wire Line
+	8450 3000 8300 3000
+Wire Wire Line
+	8000 3000 7700 3000
+$Comp
+L power:GNDA #PWR0103
+U 1 1 5F70057C
+P 8450 3400
+F 0 "#PWR0103" H 8450 3150 50  0001 C CNN
+F 1 "GNDA" H 8455 3227 50  0000 C CNN
+F 2 "" H 8450 3400 50  0001 C CNN
+F 3 "" H 8450 3400 50  0001 C CNN
+	1    8450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3350 8450 3400
 $EndSCHEMATC
